@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script defer src="/static/chat.js"></script>
+</head>
+<body>
+  <h2>Chat (Logged in as {{ username }})</h2>
+  <p><a href="/logout">Logout</a></p>
+
+  <div id="messages" style="border:1px solid #ccc; height:300px; overflow:auto; padding:8px;"></div>
+
+  <form id="chatForm">
+    <input id="msg" placeholder="Type a message..." autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
